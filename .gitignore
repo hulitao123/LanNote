@@ -1,0 +1,20 @@
+# 构建产物（可用 README 里的 PyInstaller 命令重新生成）
+build/
+dist/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 本机台账数据与设置：含使用者的备注内容与现场网段，不入库
+LanNote.db
+LanNote.db-journal
+LanNote.db-wal
+LanNote.json
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
