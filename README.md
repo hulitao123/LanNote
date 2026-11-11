@@ -4,6 +4,12 @@
 
 参考 [trickdaddy24/LanScan](https://github.com/trickdaddy24/LanScan) 的思路重写为 Windows 桌面单文件版。
 
+## 下载
+
+直接下载编译好的单文件程序（无需安装 Python）：
+
+**https://github.com/hulitao123/LanNote/releases/latest**
+
 ## 特点
 
 - **免管理员权限、免 Npcap/WinPcap 驱动**：直接调用 Windows 系统 API（`GetIpNetTable2` 读 ARP 表、`icmp.dll` 发 ICMP），双击就能用
@@ -16,7 +22,7 @@
 
 1. 双击 `LanNote.exe`，网段已自动识别（也可手改，如 `192.168.1.0/24`、`192.168.1`、`10.1.1.10-50`，多网段用逗号分隔）
 2. 点 **开始扫描**，结果实时显示进度
-3. **双击"备注"列**给设备写备注（如"3400车间生物反应器"），自动保存
+3. **双击"备注"列**给设备写备注（如"车间发酵罐 A"），自动保存
 4. 顶部筛选框可按 IP/MAC/厂商/备注过滤；"仅在线""未备注"一键筛选
 5. **导出 CSV**（带 BOM，Excel 直接打开不乱码）；文件菜单里还能从旧 CSV 回填备注
 
